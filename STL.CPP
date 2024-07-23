@@ -240,6 +240,28 @@ void explainmultimap(){
 
 }
 
+void explainextra(){
+	// it sort is ascending order
+	sort(a,a+n); // [start,end)
+	sort(v.begin(), v.end());
+	sort(a,a+3); // a section is sorted
+
+	// it sort is decending order
+	sort(a,a+n, greater<int>);
+
+	int cnt = __builtin_popcount(7); // return the nummber of 1 in its binary form
+	long long num2= 1234567890123;
+	int cnt1 = __builtin_popcountll(num2); // if there are large number of 1 then we gives long long(ll) at last 
+
+	string s1 = "123";
+	// if s1 is 231 it will not show all type of permutation so its necessary to make number is sequence.
+	do{
+		cout<<s1<<endl;
+	}while(max_permutation(s1.begin(), s1.end()));
+
+	int max1 = *max_element(a,a+n);
+}
+
 int main(){
 	// pair1();
 	// vector1();
