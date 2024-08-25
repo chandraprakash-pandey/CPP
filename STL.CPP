@@ -208,7 +208,8 @@ void explainUset(){
 }
 
 void explainmap(){
-	// Ordered according to keys
+	// Ordered according to keys Tc => O(NlogN)
+	// There is also unordermap which take TC of => O(N) in worst case it may goo to O(N^2) once in a blue moon
 	map<int, int> mpp; // [key: value]
 	map<int, pair<int, int>> mpp1;
 	map<pair<int, int>,int> mpp2;
